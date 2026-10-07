@@ -115,22 +115,25 @@ p{text-wrap:pretty;}
 img{max-width:100%;}
 .skip{position:absolute;left:-9999px;top:0;padding:10px 16px;background:#1A1A18;color:#fff;z-index:10;}
 .skip:focus{left:8px;top:8px;}
-.ywnt-wrap{display:flex;justify-content:center;}
-.ywnt-wrap > article{max-width:100%;}
+html,body{overflow-x:hidden;}
+.ywnt-wrap{display:block;}
+.ywnt-wrap main{display:block;width:100%;}
+.ywnt-wrap article{width:100% !important;max-width:900px;margin:0 auto;}
+.ywnt-wrap article h1,.ywnt-wrap article h2,.ywnt-wrap article blockquote p{overflow-wrap:break-word;}
 @media (max-width:900px){
-  .ywnt-wrap > article > div,
-  .ywnt-wrap > article > blockquote,
-  .ywnt-wrap > article figcaption{padding-left:24px !important;padding-right:24px !important;}
-  .ywnt-wrap > article h1{font-size:32px !important;}
-  .ywnt-wrap > article h2{font-size:24px !important;}
-  .ywnt-wrap > article blockquote p{font-size:22px !important;}
-  .ywnt-wrap > article [style*="grid-template-columns:230px 1fr"],
-  .ywnt-wrap > article [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr !important;}
-  .ywnt-wrap > article img[style*="height:380px"],
-  .ywnt-wrap > article img[style*="height:420px"],
-  .ywnt-wrap > article img[style*="height:460px"],
-  .ywnt-wrap > article img[style*="height:340px"]{height:240px !important;}
-  .ywnt-wrap > article > div[style*="justify-content:space-between"]{flex-wrap:wrap;gap:20px !important;}
+  .ywnt-wrap > main > article > div,
+  .ywnt-wrap > main > article > blockquote,
+  .ywnt-wrap > main > article figcaption{padding-left:24px !important;padding-right:24px !important;}
+  .ywnt-wrap > main > article h1{font-size:32px !important;}
+  .ywnt-wrap > main > article h2{font-size:24px !important;}
+  .ywnt-wrap > main > article blockquote p{font-size:22px !important;}
+  .ywnt-wrap > main > article [style*="grid-template-columns:230px 1fr"],
+  .ywnt-wrap > main > article [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr !important;}
+  .ywnt-wrap > main > article img[style*="height:380px"],
+  .ywnt-wrap > main > article img[style*="height:420px"],
+  .ywnt-wrap > main > article img[style*="height:460px"],
+  .ywnt-wrap > main > article img[style*="height:340px"]{height:240px !important;}
+  .ywnt-wrap > main > article > div[style*="justify-content:space-between"]{flex-wrap:wrap;gap:20px !important;}
 }
 </style>
 </head>
